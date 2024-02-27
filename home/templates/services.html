@@ -1,26 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Services </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+ 
+  <body>
 
-<h1>Services</h1>
-<br>
-<h2> Contents</h2>
-<br>
-<p> This page will include the following information:
-    <ul>
-        <li> images / logos </li>
-        <li> nav bar:
-            <ul>
-                <li> Hyperlink to home page </li>
-                <li> Hyperlink to about page </li>
-                <li> Hyperlink to philosophy page </li>
-                <li> Hyperlink to contact page </li>
-            </ul>
+    <h1> [ Header Image ] </h1>
+    
+    <!-- Navbar -->
+    <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+        
+        <!-- Home Button -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">
+                Home #
+            </button>
         </li>
-        <br><br>
-        <li> Services for private clients - panel with reviews </li>
-        <li> Services for corporate clients  - panel with organisations worked with</li>
-        <li> Additional services - seminars, webinars, television and radio </li>
-    </ul>
-</p>
 
-</html
+        <!-- About Button -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-5" id="about-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                About #
+            </button>
+        </li>
+
+        <!-- Philosophy Button -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-5" id="philosophy-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                Philosphy #
+            </button>
+        </li>
+        
+        <!-- ACTIVE: Services Button -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active rounded-5" id="services-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                Services
+            </button>
+        </li>
+        
+        <!-- Contact Button -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                Contact #
+            </button>
+        </li>
+    </ul>
+
+    <br> <br>
+
+    <h2> Contents</h2>
+    <br>
+    <p> This page will include the following information:
+        <ul>
+            <li> images / logos </li>
+            <li> Services for private clients - panel with reviews </li>
+            <li> Services for corporate clients  - panel with organisations worked with</li>
+            <li> Additional services - seminars, webinars, television and radio </li>
+        </ul>
+    </p>
+    
+</body>
+</html>
+
+
