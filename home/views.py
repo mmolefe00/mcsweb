@@ -5,16 +5,16 @@ from django.http import HttpResponse
 
 # Home Page View
 def greeting(request):
-    return HttpResponse('Welcome to the MCS Homepage!')
+    return render(request, 'greeting.html')
 
 def about(request):
-    return HttpResponse('About Us:')
+    return render(request, 'about.html')
 
 def philosophy(request):
-    return HttpResponse('Our Philosophy:')
+    return render(request, 'philosophy.html')
 
 def services(request):
-    return HttpResponse('Our Services:')
+    return render(request, 'services.html')
 
 def contact(request):
-    return HttpResponse('Contact Us:')
+    return render(request, 'contact.html')
