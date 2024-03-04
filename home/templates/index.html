@@ -1,8 +1,58 @@
 {% extends "navbar.html" %}
 
 {% block page_title %}
-    <h2> Home page <h2>
+<h1> Home <h1>
 {% endblock page_title %}
 
+{% block page_content %}
+<br>
+
+<div class="container">
+
+    <p> This page will include the following information:
+    <ul>
+        <li> images / logos </li>
+        <li> business summary</li>
+        <li> article cards </li>
+    </ul>
+    </p>
+    
+    <br>
+    <!-- Blog Cards -->
+    <h2>Articles and Blogs</h2>
+   
 
 
+
+    <div class="container-fluid py-1">
+        <div class="row flex-nowrap overflow-auto">
+            {% for post in posts %}
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-1">
+                    <div class="card shadow-sm mb-1">
+                        <div class="card-img-container">
+                            <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" 
+                            class="card-img-top" alt="...">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h3 class="card-title">{{ post.title }}</h3>
+                            <small class="fs-6 text-muted">{{ post.created_on.date }} <br> Categories:
+                                {% for category in post.categories.all %}
+                                    <a class="text-muted" href="{% url 'blog_category' category.name %}">{{ category.name }}</a>{% if not forloop.last %}, {% endif %}
+                                {% endfor %}
+                            </small>
+                            <p class="card-text fs-5">{{ post.body | slice:":160" }}...</p>
+                        </div>
+                        <div class="text-end m-2" >
+                        <a class="btn btn-warning btn-smt" href="{% url 'blog_detail' post.pk %}" role="button">Read More</a>
+        
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+</div>
+{% endblock page_content %}

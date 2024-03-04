@@ -1,0 +1,33 @@
+body {
+    background-color: rgba(207, 156, 26, 0.319);
+}
+
+
+/* --- --- --- Blog Card Carousel --- --- --- */
+
+.overflow-auto {
+    overflow-x: auto;           /* Enable Horizontal scrolling */
+    /* white-space: nowrap;         Prevent line breaks */
+}
+
+.card {
+    position: relative;
+}
+
+.card-body {
+    height: 290px;
+}
+
+.card-img-container {
+    padding-top: 40%; /* aspect ratio (height / width) */
+    position: relative;
+}
+
+.card-img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

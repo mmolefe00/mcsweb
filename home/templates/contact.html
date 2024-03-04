@@ -1,19 +1,21 @@
 {% extends "navbar.html" %}
 
-    <br> <br>
+{% block page_title %}
+    <h2> Contact <h2>
+{% endblock page_title %}
 
-    <h2> Contact Contents</h2>
-    <br>
+{% block page_content %}
+<div class="container">
     <p> This page will include the following information:
-    <ul>
-        <li> images / logos </li>
-        <li> Contact details: phone, email, whatsapp</li>
-        <li> Physical Address written out as well as google image of address, streetview and location pin <br>
-            - try add open in waze as well as open in maps link</li>
-    </ul>
+        <ul>
+            <li> images / logos </li>
+            <li> Contact details: phone, email, whatsapp</li>
+            <li> Physical Address written out as well as google image of address, streetview and location pin <br>
+                - try add open in waze as well as open in maps link</li>
+        </ul>
     </p>
-</body>
-</html>
+</div>
+{% endblock page_content %}
 
 
 
