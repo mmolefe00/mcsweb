@@ -2,8 +2,15 @@ body {
     background-color: rgba(207, 156, 26, 0.319);
 }
 
+hr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 /* --- --- --- Blog Card Carousel --- --- --- */
+
+/* Blog Card */
 
 .overflow-auto {
     overflow-x: auto;           /* Enable Horizontal scrolling */
@@ -12,6 +19,7 @@ body {
 
 .card {
     position: relative;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .card-body {
@@ -31,3 +39,13 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+/* Carousel container */
+
+
+.carousel-container {
+    /* Add styling properties as needed */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
