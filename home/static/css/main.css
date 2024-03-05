@@ -2,12 +2,6 @@ body {
     background-color: rgba(207, 156, 26, 0.319);
 }
 
-hr {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 /* --- --- --- Blog Card Carousel --- --- --- */
 
 /* Blog Card */
@@ -49,3 +43,26 @@ hr {
     overflow-x: auto; /* Enable horizontal scrolling */
 }
 
+/* --- --- --- Images --- --- --- */
+
+.img-header {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-portrait {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+}
+
+.img-landscape {
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+}
