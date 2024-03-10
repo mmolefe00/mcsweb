@@ -8,22 +8,19 @@ body {
 
 .overflow-auto {
     overflow-x: auto;           /* Enable Horizontal scrolling */
-    /* white-space: nowrap;         Prevent line breaks */
 }
 
 .card {
     position: relative;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    max-width: 320px;
 }
 
 .card-body {
-    height: 290px;
+    max-height: 290px;
+    min-height: 200px;
 }
 
-.card-img-container {
-    padding-top: 40%; /* aspect ratio (height / width) */
-    position: relative;
-}
 
 .card-img-top {
     position: absolute;
@@ -38,9 +35,9 @@ body {
 
 
 .carousel-container {
-    /* Add styling properties as needed */
-    border-radius: 5px; /* Add border radius for rounded corners */
-    overflow-x: auto; /* Enable horizontal scrolling */
+
+    border-radius: 5px;     /* Border radius for rounded corners */
+    overflow-x: auto;       /* Enable horizontal scrolling */
 }
 
 /* --- --- --- Images --- --- --- */
@@ -54,7 +51,7 @@ body {
 .img-portrait {
     max-height: 300px;
     object-fit: cover;
-    border-radius: 5px; /* Add border radius for rounded corners */
+    border-radius: 5px; /* border radius for rounded corners */
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     margin: 5px;
 }
@@ -62,7 +59,16 @@ body {
 .img-landscape {
     max-width: 400px;
     object-fit: cover;
-    border-radius: 5px; /* Add border radius for rounded corners */
+    border-radius: 5px; /* border radius for rounded corners */
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     margin: 5px;
+}
+
+
+/* --- --- --- Trade Reference Cards --- --- --- */
+
+.trc-img {
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 5px;
 }
