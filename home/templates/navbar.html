@@ -17,31 +17,35 @@
    <title> Company </title>
 
 </head>
-  <body>
+  <body class="bg-light">
     
     <!-- Navbar -->
-    <div class="container px-2 py-4">
-      <nav class="nav nav-pills nav-fill flex-column flex-sm-row bg-dark rounded-5 p-2 "
-      style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-dark); --bs-nav-pills-link-active-bg: var(--bs-white);">
-        
+    <div class="sticky-top bg-light">
+      <div class="container px-2 py-4 ">
+
         <!-- Navbar Brand -->
-        <a class="nav-brand px-4 text-white" href="/">Company Brand</a>
-        
-        <!-- Page Links -->
-        <a class="flex-sm-link nav-link rounded-5 {% if nbar == 'home' %}active{% endif %}"  href="/">Home</a>
-        <a class="flex-sm-link nav-link rounded-5 {% if nbar == 'about' %}active{% endif %}" href="/about/">About</a>
-        <a class="flex-sm-link nav-link rounded-5 {% if nbar == 'philosophy' %}active{% endif %}" href="/philosophy/">Philosophy</a>
-        <a class="flex-sm-link nav-link rounded-5 {% if nbar == 'services' %}active{% endif %}" href="/services/">Services</a>
-        <a class="flex-sm-link nav-link rounded-5 {% if nbar == 'contact' %}active{% endif %}" href="/contact/">Contact</a>
-      </nav>
+        <div class="mb-4 d-flex justify-content-center ">
+          <a class="nav-brand px-4 text-primary" href="/">Company Brand</a>
+        </div>
 
-      <br>
+        <nav class="nav nav-pills nav-fill flex-column flex-sm-row bg-dark rounded-5 p-2"
+        style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-dark); --bs-nav-pills-link-active-bg: var(--bs-white);">
+          
+          <!-- Page Links -->
+          <a class="flex-sm-link nav-link rounded-5 {% if nbar == 'home' %}active{% endif %}"  href="/">Home</a>
+          <a class="flex-sm-link nav-link rounded-5 {% if nbar == 'about' %}active{% endif %}" href="/about/">About</a>
+          <a class="flex-sm-link nav-link rounded-5 {% if nbar == 'philosophy' %}active{% endif %}" href="/philosophy/">Philosophy</a>
+          <a class="flex-sm-link nav-link rounded-5 {% if nbar == 'services' %}active{% endif %}" href="/services/">Services</a>
+          <a class="flex-sm-link nav-link rounded-5 {% if nbar == 'contact' %}active{% endif %}" href="/contact/">Contact</a>
+        </nav>  
+      </div>
+    </div>
 
-      <div>{% block page_title %}{% endblock page_title %}</div>
-  </div>
+    <div class="text-center">{% block page_title %}{% endblock page_title %}</div>
+  
     
     
-    {% block page_content %}{% endblock page_content  %}
+   {% block page_content %}{% endblock page_content  %}
 
   </body>
 </html>
