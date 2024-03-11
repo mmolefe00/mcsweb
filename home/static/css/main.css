@@ -61,4 +61,15 @@
 }
 
 
-/* --- --- --- Trade Reference Cards --- --- --- */
+/* --- --- --- Philosophy --- --- --- */
+.event-block {
+    height: 420px;
+    width: 50%;
+
+}
+
+.img-fluid {
+    width: 85%;
+    height: auto;
+    margin: 5px;
+}
