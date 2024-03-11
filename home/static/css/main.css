@@ -3,18 +3,16 @@
 /* Blog Card */
 
 .overflow-auto {
-    overflow-x: auto;           /* Enable Horizontal scrolling */
+    overflow-x: auto;
 }
 
 .card {
     position: relative;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     max-width: 320px;
 }
 
 .card-body {
     max-height: 290px;
-    min-height: 200px;
 }
 
 
