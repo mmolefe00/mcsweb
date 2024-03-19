@@ -63,11 +63,27 @@
 .event-block {
     height: 420px;
     width: 50%;
-
 }
 
 .img-fluid {
     width: 85%;
     height: auto;
     margin: 5px;
+}
+
+/* --- --- --- Services --- --- --- */
+
+.corp-img {
+    height: 180px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.service-block {
+    max-height: 420px;
+    width: 75%;
+}
+.service-img-block {
+    max-height: 360px;
+    width: 25%;
 }
